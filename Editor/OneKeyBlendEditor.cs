@@ -4,8 +4,8 @@ using UnityEngine;
 public class OneKeyBlendEditor : EditorWindow
 {
     private static readonly string instantiatedPrefabName = "One Key Blend";
-    [MenuItem("Ame雨/Instantiate One Key Blend Prefab")]
-    public static void InstantiateBindingComponentPrefab()
+    [MenuItem("Ame雨/Instantiate One Key Blend Prefab",priority = 0)]
+    public static void InstantiateOneKeyBlendComponentPrefab()
     {
         // 当场景中已有该预制体时
         GameObject[] gameObjects = FindObjectsOfType<GameObject>();
@@ -34,7 +34,7 @@ public class OneKeyBlendEditor : EditorWindow
         }
     }
     
-    [MenuItem("Ame雨/Plug-in Instruction")]
+    [MenuItem("Ame雨/Plug-in Instruction",priority = 2)]
     public static void OpenInstruction()
     {
         

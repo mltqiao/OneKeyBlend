@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEditor;
 
 
@@ -14,7 +12,7 @@ public class OneKeyBlendInspector : Editor
         DrawTargetObjectTransformField();
         DrawSkinsObjectTransformField();
         DrawClassicBlendButton();
-        DrawOneSetBonesBlendAllButton();
+        DrawAllSetsBonesBlendButton();
         DrawOneSkinObjectTransformField();
         DrawOneSetBonesBlendButton();
     }
@@ -48,7 +46,7 @@ public class OneKeyBlendInspector : Editor
         }
     }
     
-    private void DrawOneSetBonesBlendAllButton()
+    private void DrawAllSetsBonesBlendButton()
     {
         if (GUILayout.Button("一键替换Renderer.Bones（整体）"))
         {
